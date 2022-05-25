@@ -13,13 +13,19 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="common/css/style.css" />  
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
   <body>
     <!--        ヘッダー        -->
     <header class="header">
       <div class="header__inner">
-        <img src="" alt="" class="header__logo" />
+        <div class="header__logo">
+          <a href="">
+            <img src="" alt="">
+          </a>
+        </div><!-- /.header__logo -->
         <p class="header__btn">
           <a href="" class="btn">無料カウンセリングを受ける</a><!-- /.btn -->
         </p>
@@ -35,8 +41,7 @@
         <p class="mv__subtitle"></p>
         <!-- /.mv__subtitle -->
         <p class="mv__btn">
-          <a href="" class="btn"></a
-          ><!-- /.btn -->
+          <a href="" class="btn"></a><!-- /.btn -->
         </p>
         <!-- /.mv__btn -->
         <img src="" alt="" class="mv__img" />
@@ -61,6 +66,7 @@
         </section>
         <!--          /.concept           -->
         <section class="service">
+
           <div class="service__inner">
             <div class="media">
               <div class="media__img__inner">
@@ -68,9 +74,11 @@
               </div>
               <!-- /.media__img__inner -->
               <div class="media__body">
-                <p class="media__subtitle"></p>
+                <p class="media__subtitle">
+                </p>
                 <!-- /.media__subtitle -->
-                <p class="media__title"></p>
+                <p class="media__title">
+                </p>
                 <!-- /.media__title -->
                 <p class="media__text"></p>
                 <!-- /.media__text -->
@@ -115,7 +123,7 @@
                     </li><!-- /.tab-navigation__item -->
                   </ul><!-- /.tab-navigation__inner -->
                 </nav><!-- /.tab-navigation -->
-                <div class="tab-cards">
+                <div class="tab-cards grid">
                   <div class="tab-card">
                     <div class="tab-card__img-inner">
                       <img src="" alt="" class="tab-card__img">
@@ -150,7 +158,17 @@
             <h2 class="heading-lv2">
               <span class="heading-lv2__subtitle"></span><!-- /.heading-lv2__subtitle -->
             </h2><!-- /.heading-lv2 -->
-
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
           </div><!-- /.studio__inner -->
         </section><!--          /.studio          -->
         <section class="price">
@@ -186,9 +204,20 @@
     <!--        フッター        -->
     <footer class="footer">
       <div class="footer__inner">
-        <small class="copyright">&copy;</small>
+        <div class="footer__logo">
+          <a href="">
+            <img src="" alt="">
+          </a>
+        </div><!-- /.footer__logo -->
       </div>
       <!-- /.footer__inner -->
     </footer>
+    <div class="page-top">
+      <a href="" class="page-top__link">
+        <span class="page-top__icon"></span><!-- /.page-top__icon -->
+      </a><!-- /.page-top__link -->
+    </div><!-- /.page-top -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="common/js/swiper.js"></script>
   </body>
 </html>
