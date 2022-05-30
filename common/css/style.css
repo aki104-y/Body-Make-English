@@ -349,6 +349,9 @@ img {
 .header__inner {
   padding-right: 5%;
   padding-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (min-width: 992px) {
   .header__inner {
@@ -375,7 +378,7 @@ img {
   padding-bottom: 80px;
   padding-left: 5%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .main__inner {
     max-width: 1150px;
     padding-top: 100px;
@@ -388,10 +391,41 @@ img {
 
 /* footer
 ------------------------------------------------------ */
+.footer {
+  background-color: #141414;
+}
+
 .footer__inner {
   text-align: center;
+  padding: 100px 0 100px 0;
 }
-.footer__inner .copyright {
-  color: white;
+
+/* ボタン
+------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  width: 360px;
+  max-width: 100%;
+  padding: 30px 50px;
+  background-color: #eb51c2;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* cta(行動喚起)
+------------------------------------------------------ */
+.cta__body {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  background-color: #eb51c2;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .cta__body {
+    padding: 50px 0 50px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
