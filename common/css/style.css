@@ -331,7 +331,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif, "Josefin Sans", sans-serif, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo;
+  font-family: "Josefin Sans", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 a {
@@ -404,15 +404,46 @@ img {
 ------------------------------------------------------ */
 .btn {
   display: inline-block;
-  width: 360px;
+  width: 300px;
   max-width: 100%;
-  padding: 30px 50px;
+  padding: 20px 10px;
   background-color: #eb51c2;
   border-radius: 50px;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
+}
+@media screen and (min-width: 992px) {
+  .btn {
+    font-size: 1.25rem;
+    width: 360px;
+    padding: 35px;
+  }
+}
+
+.btn--color--reverse {
+  background-color: #fff;
+  color: #eb51c2;
+}
+
+.btn--header {
+  width: 186px;
+  padding: 12px 10px;
+  font-size: 0.75rem;
+}
+.btn--mv {
+  width: 220px;
+  padding: 16px 10px;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 992px) {
+  .btn--mv {
+    font-size: 1.25rem;
+    width: 370px;
+    padding: 35px 10px;
+  }
 }
 
 /* cta(行動喚起)
