@@ -400,6 +400,30 @@ img {
   padding: 100px 0 100px 0;
 }
 
+/* メインビジュアル
+------------------------------------------------------ */
+.mv__title {
+  font-size: 2.625rem;
+}
+@media screen and (min-width: 992px) {
+  .mv__title {
+    font-size: 5.625rem;
+  }
+}
+
+.mv__title span {
+  color: #eb51c2;
+}
+
+.mv__subtitle {
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 992px) {
+  .mv__subtitle {
+    font-size: 1.75rem;
+  }
+}
+
 /* ボタン
 ------------------------------------------------------ */
 .btn {
@@ -410,7 +434,7 @@ img {
   background-color: #eb51c2;
   border-radius: 50px;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 0.8125rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -433,6 +457,13 @@ img {
   padding: 12px 10px;
   font-size: 0.75rem;
 }
+@media screen and (min-width: 992px) {
+  .btn--header {
+    width: 250px;
+    font-size: 0.9375rem;
+  }
+}
+
 .btn--mv {
   width: 220px;
   padding: 16px 10px;
