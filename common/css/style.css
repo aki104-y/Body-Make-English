@@ -351,8 +351,8 @@ img {
 }
 
 .header__inner {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 4%;
+  padding-left: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -378,9 +378,9 @@ img {
 ------------------------------------------------------ */
 .main__inner {
   padding-top: 80px;
-  padding-right: 5%;
+  padding-right: 4%;
   padding-bottom: 80px;
-  padding-left: 5%;
+  padding-left: 4%;
 }
 @media screen and (min-width: 992px) {
   .main__inner {
@@ -411,42 +411,55 @@ img {
 }
 
 .mv__inner {
-  padding-right: 5%;
-  padding-left: 5%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .mv__inner {
-    max-width: 1150px;
+    max-width: 1440px;
     padding-right: 20px;
-    padding-left: 20px;
     margin: 0 auto;
   }
 }
 
-.mv__title {
-  font-size: 2.625rem;
-  font-style: italic;
-  padding: 125px 0 10px 0;
-}
-@media screen and (min-width: 992px) {
-  .mv__title {
-    font-size: 5.625rem;
-    padding: 220px 0 20px 0;
+@media screen and (min-width: 1200px) {
+  .mv__text-box {
+    padding-left: 12%;
   }
 }
 
-.mv__title span {
+.mv__title {
+  font-size: min(11vw, 5.625rem);
+  font-style: italic;
+  font-weight: inherit;
+  color: #111;
+  line-height: 1;
+  padding: 110px 0 3px 0;
+}
+@media screen and (min-width: 992px) {
+  .mv__title {
+    padding: 172px 0 11px 0;
+  }
+}
+
+.mv__text-color {
+  background-color: #fff;
+}
+
+.mv__text-color--accent {
+  font-size: min(9vw, 85px);
   color: #eb51c2;
 }
 
 .mv__subtitle {
-  padding-bottom: 19px;
-  font-size: 0.8125rem;
+  padding-bottom: 12px;
+  font-size: min(3.5vw, 28px);
+  font-weight: bold;
+  letter-spacing: -1px;
 }
 @media screen and (min-width: 992px) {
   .mv__subtitle {
-    font-size: 1.75rem;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
   }
 }
 
@@ -461,9 +474,19 @@ img {
   object-fit: cover;
   z-index: -1;
 }
+@media screen and (min-width: 576px) {
+  .mv__img {
+    height: 500px;
+  }
+}
 @media screen and (min-width: 992px) {
   .mv__img {
-    height: auto;
+    height: 680px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mv__img {
+    padding-right: 50px;
   }
 }
 
@@ -516,7 +539,7 @@ img {
   .btn--mv {
     font-size: 1.25rem;
     width: 370px;
-    padding: 35px 10px;
+    padding: 26px 10px;
   }
 }
 
