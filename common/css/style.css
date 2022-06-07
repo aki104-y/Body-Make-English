@@ -466,7 +466,7 @@ img {
 
 .mv__img {
   position: absolute;
-  border-radius: 0 0 0 90px;
+  border-radius: 0 0 0 50px;
   width: 70%;
   top: 0;
   right: 0;
@@ -477,15 +477,21 @@ img {
 }
 @media screen and (min-width: 576px) {
   .mv__img {
+    height: 410px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .mv__img {
     height: 500px;
   }
 }
 @media screen and (min-width: 992px) {
   .mv__img {
     height: 680px;
+    border-radius: 0 0 0 90px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1850px) {
   .mv__img {
     padding-right: 50px;
   }
@@ -504,6 +510,12 @@ img {
 @media screen and (min-width: 992px) {
   .concept__title {
     font-size: 6.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .concept__title-br {
+    display: none;
   }
 }
 
