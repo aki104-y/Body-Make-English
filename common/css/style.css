@@ -358,7 +358,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .header__inner {
     max-width: 1150px;
     padding-right: 20px;
@@ -369,7 +369,7 @@ img {
 
 /* header-nav
 ------------------------------------------------------ */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .header-nav {
     display: flex;
   }
@@ -378,15 +378,13 @@ img {
 /* main
 ------------------------------------------------------ */
 .main__inner {
-  padding-top: 80px;
   padding-right: 5%;
   padding-bottom: 80px;
   padding-left: 5%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .main__inner {
-    max-width: 1150px;
-    padding-top: 100px;
+    max-width: 1300px;
     padding-right: 20px;
     padding-bottom: 100px;
     padding-left: 20px;
@@ -414,6 +412,13 @@ img {
 .mv__inner {
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 34px;
+}
+@media screen and (min-width: 1025px) {
+  .mv__inner {
+    padding-bottom: 105px;
+    padding-left: 12%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mv__inner {
@@ -437,9 +442,9 @@ img {
   line-height: 1;
   padding: 110px 0 3px 0;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .mv__title {
-    padding: 172px 0 11px 0;
+    padding-top: 172px;
   }
 }
 
@@ -458,7 +463,7 @@ img {
   font-weight: bold;
   letter-spacing: -1px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .mv__subtitle {
     padding-bottom: 25px;
   }
@@ -485,7 +490,7 @@ img {
     height: 500px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .mv__img {
     height: 680px;
     border-radius: 0 0 0 90px;
@@ -503,17 +508,16 @@ img {
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 700;
-  line-height: 1;
   color: #eb51c2;
   text-align: center;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .concept__title {
     font-size: 6.75rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .concept__title-br {
     display: none;
   }
@@ -525,7 +529,7 @@ img {
   letter-spacing: 0.1em;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .concept__subtitle {
     font-size: 2rem;
   }
@@ -541,12 +545,64 @@ img {
   text-align: center;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .concept__text {
     font-size: 1rem;
     line-height: 2;
     margin-bottom: 30px;
   }
+}
+
+/* セクション1
+------------------------------------------------------ */
+@media screen and (min-width: 1025px) {
+  .service__inner {
+    max-width: 1300px;
+  }
+}
+
+/* メディアカード
+------------------------------------------------------ */
+.media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1025px) {
+  .media {
+    flex-direction: row;
+  }
+}
+.media:last-child {
+  padding-bottom: 0;
+}
+.media .media__img-inner {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .media .media__img-inner {
+    flex: 0 1 72.58333%;
+    margin-right: 3.33333%;
+  }
+}
+.media .media__img {
+  width: 100%;
+}
+.media .media__body {
+  flex: 1;
+}
+.media .media__body > *:last-child {
+  margin-bottom: 0;
+}
+.media .media__title {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.media .media__text {
+  font-size: 0.9375rem;
 }
 
 /* ボタン
@@ -564,7 +620,7 @@ img {
   text-align: center;
   text-decoration: none;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .btn {
     font-size: 1.25rem;
     width: 360px;
@@ -582,7 +638,7 @@ img {
   padding: 12px 10px;
   font-size: 0.75rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .btn--header {
     width: 250px;
     font-size: 0.9375rem;
@@ -594,7 +650,7 @@ img {
   padding: 16px 10px;
   font-size: 0.8125rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .btn--mv {
     font-size: 1.25rem;
     width: 370px;
@@ -610,7 +666,7 @@ img {
   background-color: #eb51c2;
   color: #fff;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
   .cta__body {
     padding: 50px 0 50px 0;
   }
