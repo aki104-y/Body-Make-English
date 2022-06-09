@@ -564,7 +564,7 @@ img {
 /* メディアカード
 ------------------------------------------------------ */
 .media {
-  display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
   padding-bottom: 60px;
@@ -578,31 +578,54 @@ img {
   padding-bottom: 0;
 }
 .media .media__img-inner {
+  z-index: 1;
   margin-right: 0;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1025px) {
   .media .media__img-inner {
-    flex: 0 1 72.58333%;
-    margin-right: 3.33333%;
+    width: 67%;
   }
 }
 .media .media__img {
   width: 100%;
 }
 .media .media__body {
-  flex: 1;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  width: 555px;
+  padding: 100px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .media .media__body > *:last-child {
   margin-bottom: 0;
 }
-.media .media__title {
-  margin-bottom: 10px;
+.media .media__subtitle {
   font-size: 1.125rem;
+  color: #eb51c2;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .media .media__subtitle {
+    font-size: 1.5rem;
+  }
+}
+.media .media__title {
+  margin-bottom: 15px;
+  font-size: 1.375rem;
   font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1025px) {
+  .media .media__title {
+    font-size: 2rem;
+  }
 }
 .media .media__text {
-  font-size: 0.9375rem;
+  line-height: 1.7;
 }
 
 /* ボタン
