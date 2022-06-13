@@ -360,7 +360,7 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .header__inner {
-    max-width: 1150px;
+    max-width: 1210px;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
@@ -382,10 +382,17 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .main__inner {
-    max-width: 1340px;
     padding-bottom: 100px;
-    margin: 0 auto;
   }
+}
+
+.section-border-top {
+  transform: translateY(1px);
+  vertical-align: bottom;
+}
+
+.section-border-bottom {
+  transform: translateY(-1px);
 }
 
 /* footer
@@ -498,6 +505,55 @@ img {
   }
 }
 
+/* ボタン
+------------------------------------------------------ */
+.btn {
+  display: inline-block;
+  width: 300px;
+  max-width: 100%;
+  padding: 16px 10px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #eb51c2;
+  border-radius: 50px;
+}
+@media screen and (min-width: 1025px) {
+  .btn {
+    width: 360px;
+    padding: 26px 10px;
+    font-size: 1.25rem;
+  }
+}
+
+.btn--color--reverse {
+  color: #eb51c2;
+  background-color: #fff;
+}
+
+.btn--header {
+  width: 186px;
+  padding: 12px 10px;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 1025px) {
+  .btn--header {
+    width: 250px;
+    font-size: 0.9375rem;
+  }
+}
+
+.btn--mv {
+  width: 220px;
+}
+@media screen and (min-width: 1025px) {
+  .btn--mv {
+    width: 370px;
+  }
+}
+
 /* コンセプト
 ------------------------------------------------------ */
 .concept__title {
@@ -552,6 +608,7 @@ img {
 /* セクション1
 ------------------------------------------------------ */
 .service__inner {
+  margin: 0 auto;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 1025px) {
@@ -657,52 +714,47 @@ img {
   }
 }
 
-/* ボタン
+/* セクション2
 ------------------------------------------------------ */
-.btn {
-  display: inline-block;
-  width: 300px;
-  max-width: 100%;
-  padding: 16px 10px;
-  font-size: 0.8125rem;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
+.trainer__back-color {
   background-color: #eb51c2;
-  border-radius: 50px;
+}
+
+.trainer__inner {
+  margin: 0 auto;
+  padding: 0 30px;
 }
 @media screen and (min-width: 1025px) {
-  .btn {
-    width: 360px;
-    padding: 26px 10px;
+  .trainer__inner {
+    max-width: 1170px;
+  }
+}
+
+/* heading
+------------------------------------------------------ */
+.heading-lv2 {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+@media screen and (min-width: 1025px) {
+  .heading-lv2 {
+    font-size: 4rem;
+  }
+}
+
+.heading-lv2--color--reverse {
+  color: #fff;
+}
+
+.heading-lv2__subtitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1025px) {
+  .heading-lv2__subtitle {
     font-size: 1.25rem;
-  }
-}
-
-.btn--color--reverse {
-  color: #eb51c2;
-  background-color: #fff;
-}
-
-.btn--header {
-  width: 186px;
-  padding: 12px 10px;
-  font-size: 0.75rem;
-}
-@media screen and (min-width: 1025px) {
-  .btn--header {
-    width: 250px;
-    font-size: 0.9375rem;
-  }
-}
-
-.btn--mv {
-  width: 220px;
-}
-@media screen and (min-width: 1025px) {
-  .btn--mv {
-    width: 370px;
   }
 }
 
