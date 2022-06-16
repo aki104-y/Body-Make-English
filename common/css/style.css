@@ -758,6 +758,43 @@ img {
   }
 }
 
+/* タブ（トレーナー）
+------------------------------------------------------ */
+.tab-navigation {
+  padding-bottom: 20px;
+}
+
+.tab-navigation__inner {
+  display: flex;
+}
+
+.tab-navigation__item {
+  width: 100%;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tab-navigation__link {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media screen and (min-width: 1025px) {
+  .tab-navigation__link {
+    font-size: 1.125rem;
+    padding-bottom: 20px;
+  }
+}
+
+.tab-navigation__link--active {
+  border-bottom: 2px solid #fff;
+}
+
 /* cta(行動喚起)
 ------------------------------------------------------ */
 .cta__body {
