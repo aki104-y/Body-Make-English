@@ -795,6 +795,43 @@ img {
   border-bottom: 2px solid #fff;
 }
 
+/* タブ（トレーナー）
+------------------------------------------------------ */
+.tab-card {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.tab-card__body {
+  padding: 20px;
+}
+
+.tab-card__text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+@media screen and (min-width: 1025px) {
+  .tab-card__text {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+}
+
+/* グリッド
+------------------------------------------------------ */
+.grid {
+  display: grid;
+  gap: 15px;
+}
+
+/*PC3カラム*/
+@media screen and (min-width: 600px) {
+  .grid--pc3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* cta(行動喚起)
 ------------------------------------------------------ */
 .cta__body {
