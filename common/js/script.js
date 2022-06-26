@@ -23,16 +23,18 @@ $(function () {
   //スタッフエリアを非表示
   $('.grid--staff').hide();
   //タブをクリック
-  $(".tab-navigation__link").click(function () {
+  $('.tab-navigation__link').click(function () {
     //一度全てのコンテンツを非表示
-    $(".grid").hide();
+    $('.grid').hide();
     //選択されたコンテンツを再表示  
-    $($(this).attr("href")).show();
+    $($(this).attr('href')).show();
     //現在の付与しているクラスを削除
-    $(".tab-navigation__link--active").removeClass("tab-navigation__link--active");
+    $('.tab-navigation__link--active').removeClass('tab-navigation__link--active');
     //選択されたタブにクラスを追加
-    $(this).addClass("tab-navigation__link--active");
-
+    $(this).addClass('tab-navigation__link--active');
+    //選択されたタブにクラスを追加&削除
+    $('.tab-card').removeClass('show').addClass('show');
+  
     return false;
   })
 
