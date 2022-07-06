@@ -731,18 +731,18 @@ img {
   }
 }
 
-/* セクション2
+/* セクション
 ------------------------------------------------------ */
-.trainer__back-color {
+.section__back-color {
   background-color: #eb51c2;
 }
 
-.trainer__inner {
+.section__inner {
   margin: 0 auto;
   padding: 40px 30px;
 }
 @media screen and (min-width: 1025px) {
-  .trainer__inner {
+  .section__inner {
     max-width: 1170px;
   }
 }
@@ -766,6 +766,7 @@ img {
 
 .heading-lv2__subtitle {
   display: block;
+  color: #eb51c2;
   margin-top: 10px;
   font-size: 0.875rem;
   font-weight: bold;
@@ -774,6 +775,10 @@ img {
   .heading-lv2__subtitle {
     font-size: 1.25rem;
   }
+}
+
+.heading-lv2__subtitle--color--reverse {
+  color: #fff;
 }
 
 /* タブ（トレーナー）
@@ -868,6 +873,29 @@ img {
   }
 }
 
+/* セクション3
+------------------------------------------------------ */
+.studio__inner {
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+@media screen and (min-width: 1025px) {
+  .studio__inner {
+    max-width: 1170px;
+  }
+}
+
+.price-card {
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  text-align: center;
+  margin-left: 20px;
+  padding: 40px 20px 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
 /* cta(行動喚起)
 ------------------------------------------------------ */
 .cta__body {
@@ -880,5 +908,85 @@ img {
   .cta__body {
     padding: 50px 0;
   }
+}
+
+/* swiper
+------------------------------------------------------ */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-bottom: 39px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  .swiper-button-next,
+.swiper-button-prev {
+    width: 60px;
+    height: 60px;
+    top: 335px;
+  }
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+@media screen and (min-width: 1025px) {
+  .swiper-button-prev {
+    left: -30px;
+  }
+}
+
+.swiper-button-next {
+  right: -20px;
+}
+@media screen and (min-width: 1025px) {
+  .swiper-button-next {
+    right: -30px;
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: "Material Icons Round";
+  font-size: 1.5rem;
+  color: #eb51c2;
+}
+@media screen and (min-width: 1025px) {
+  .swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 2rem;
+  }
+}
+
+.swiper-button-prev:after {
+  content: "navigate_before";
+}
+
+.swiper-button-next:after {
+  content: "navigate_next";
+}
+
+.swiper-pagination-bullet-active {
+  background: #eb51c2;
 }
 /*# sourceMappingURL=style.css.map */

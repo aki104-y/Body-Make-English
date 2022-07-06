@@ -10,10 +10,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!-- css -->
   <link rel="stylesheet" href="common/css/style.css" />
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -126,15 +128,15 @@
         <!-- /.service__inner -->
       </section>
       <!--          /.service           -->
-      <section class="trainer">
+      <section class="trainer section">
         <svg class="section-border-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
           <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(0 -224)" fill="#eb51c2" />
         </svg>
-        <div class="trainer__back-color">
-          <div class="trainer__inner">
+        <div class="section__back-color">
+          <div class="section__inner">
             <h2 class="heading-lv2 heading-lv2--color--reverse">
               Our Trainer
-              <span class="heading-lv2__subtitle">トレーナー</span><!-- /.heading-lv2__subtitle -->
+              <span class="heading-lv2__subtitle heading-lv2__subtitle--color--reverse">トレーナー</span><!-- /.heading-lv2__subtitle -->
             </h2><!-- /.heading-lv2 -->
             <div class="tab">
               <div class="tab__inner">
@@ -204,12 +206,10 @@
                 </div><!-- /.grid grid--pc3col grid--staff-->
               </div><!-- /.tab__inner -->
             </div><!-- /.tab -->
-          </div><!-- /.trainer__inner -->
-        </div><!-- /.trainer__back-color -->
+          </div><!-- /.section__inner -->
+        </div><!-- /.section__back-color -->
         <svg class="section-border-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
-          <path
-            d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z"
-            transform="translate(375 249) rotate(180)" fill="#eb51c2" />
+          <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(375 249) rotate(180)" fill="#eb51c2" />
         </svg>
       </section><!--          /.trainer           -->
       <section class="studio">
@@ -218,26 +218,41 @@
             Studio
             <span class="heading-lv2__subtitle">スタジオ</span><!-- /.heading-lv2__subtitle -->
           </h2><!-- /.heading-lv2 -->
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/studio01@2x.png" alt="トレーニング中の写真"></div>
-              <div class="swiper-slide"><img src="images/studio02@2x.png" alt="トレーニング中の写真"></div>
-              <div class="swiper-slide"><img src="images/studio03@2x.png" alt="トレーニング中の写真"></div>
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inner"><img src="images/studio01@2x.png" alt="トレーニング中の写真"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inner">
+                    <img src="images/studio02@2x.png" alt="トレーニング中の写真">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide-inner">
+                    <img src="images/studio03@2x.png" alt="トレーニング中の写真">
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
           </div>
         </div><!-- /.studio__inner -->
       </section><!--          /.studio          -->
-      <section class="price">
-        <div class="price__inner">
-          <h2 class="heading-lv2">
+      <section class="price section">
+        <svg class="section-border-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
+          <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(0 -224)" fill="#eb51c2" />
+        </svg>
+        <div class="section__back-color">
+        <div class="section__inner">
+          <h2 class="heading-lv2 heading-lv2--color--reverse">
             Price
-            <span class="heading-lv2__subtitle">料金</span><!-- /.heading-lv2__subtitle -->
+            <span class="heading-lv2__subtitle heading-lv2__subtitle--color--reverse">料金</span><!-- /.heading-lv2__subtitle -->
           </h2><!-- /.heading-lv2 -->
-          <div class="price-cards grid">
+          <div class="price-cards grid grid--pc3col">
             <div class="price-card">
               <div class="price-card__header">
                 <h3 class="price-card__title">週1コース</h3><!-- /.price-card__title -->
@@ -266,6 +281,11 @@
               </dl><!-- /.price-card__body -->
             </div><!-- /.price-card -->
             <div class="price-card">
+              <div class="price-card__label">
+                <p class="price-card__label-text">
+                  オススメ!
+                </p><!-- /.price-card__label-text -->
+              </div><!-- /.price-card__label -->
               <div class="price-card__header">
                 <h3 class="price-card__title">週2コース</h3><!-- /.price-card__title -->
                 <p class="price-card__price"><span>￥</span>40,000</p><!-- /.price-card__price -->
@@ -294,11 +314,6 @@
             </div><!-- /.price-card -->
             <div class="price-card">
               <div class="price-card__header">
-                <div class="price-card__label">
-                  <p class="price-card__label-text">
-                    オススメ!
-                  </p><!-- /.price-card__label-text -->
-                </div><!-- /.price-card__label -->
                 <h3 class="price-card__title">無制限</h3><!-- /.price-card__title -->
                 <p class="price-card__price"><span>￥</span>70,000</p><!-- /.price-card__price -->
                 <p class="price-card__detail">(入会金￥10000)</p><!-- /.price-card__detail -->
@@ -325,8 +340,9 @@
               </dl><!-- /.price-card__body -->
             </div><!-- /.price-card -->
           </div><!-- /.price-cards grid-->
-        </div><!-- /.price__inner -->
-      </section><!--          /.price           -->
+        </div><!-- /.section__inner -->
+        </div>
+      </section><!--          /.price section       -->
       <section class="faq">
         <div class="faq__inner">
           <h2 class="heading-lv2 heading-lv2--color--reverse">
@@ -408,7 +424,6 @@
   <div class="page-top">
     <a href="" class="page-top__link"></a><!-- /.page-top__link -->
   </div><!-- /.page-top -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="common/js/jquery-3.6.0.min.js"></script>
   <script src="common/js/script.js"></script>
 </body>
