@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>サイト名</title>
+  <title>ENGBODY</title>
   <meta name="”description”" content="”サイトの説明”" />
   <link rel="icon" type="image/png" href="ファビコンのデータ" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400;1,700&display=swap"rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   <!-- swiper -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -39,8 +39,17 @@
     <div class="mv__inner">
       <div class="mv__text-box">
         <h2 class="mv__title">
-          <span class="mv__text-color">Body Make<br><span class="mv__text-color mv__text-color--accent">&</span>English
-          </span><!-- /mv__text-color -->
+          <span class="bgextend bgLRextendTrigger">
+            <span class="bgappearTrigger">
+              <span class="mv__text-color">Body Make</span>
+            </span></span><br>
+            <span class="bgextend bgLRextendTrigger">
+              <span class="bgappearTrigger">
+                <span class="mv__text-color">
+                <span class="mv__text-color mv__text-color--accent">&</span>English</span><!-- /.mv__text-color -->
+              </span>
+            </span>
+            </h2>
         </h2>
         <!-- /.mv__title -->
         <p class="mv__subtitle"><span class="mv__text-color">英会話＆パーソナルトレーニングジム</span></p>
@@ -86,7 +95,7 @@
               <img src="images/about-food@2x.png" alt="英語で話をしながらトレーニングしている二人の女性の写真" class="media__img" />
             </div>
             <!-- /.media__img-inner -->
-            <div class="media__body">
+            <div class="media__body fadein">
               <p class="media__subtitle">Training</p>
               <!-- /.media__subtitle -->
               <h3 class="media__title">
@@ -107,7 +116,7 @@
               <img src="images/about-training@2x.png" alt="低糖質ご飯の写真" class="media__img" />
             </div>
             <!-- /.media__img-inner -->
-            <div class="media__body media__body--reverse">
+            <div class="media__body media__body--reverse fadein">
               <p class="media__subtitle media__subtitle--food">Food</p>
               <!-- /.media__subtitle -->
               <h3 class="media__title">低糖質レストランを完備！<br>
@@ -247,153 +256,176 @@
           <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(0 -224)" fill="#eb51c2" />
         </svg>
         <div class="section__back-color">
-        <div class="section__inner">
-          <h2 class="heading-lv2 heading-lv2--color--reverse">
-            Price
-            <span class="heading-lv2__subtitle heading-lv2__subtitle--color--reverse">料金</span><!-- /.heading-lv2__subtitle -->
-          </h2><!-- /.heading-lv2 -->
-          <div class="price-cards grid grid--pc3col">
-            <div class="price-card">
-              <div class="price-card__header">
-                <h3 class="price-card__title">週1コース</h3><!-- /.price-card__title -->
-                <p class="price-card__price"><span>￥</span>20,000</p><!-- /.price-card__price -->
-                <p class="price-card__detail">(入会金￥10000)</p><!-- /.price-card__detail -->
-              </div><!-- /.price-card__header -->
-              <dl class="price-card__body">
-                <dt class="price-card__body-head">
-                  レンタル
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  タオル、ウェア、プロテイン無料
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  レストラン
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  使用不可
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  食事指導
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  無し
-                </dd><!-- /.price-card-body-text -->
-              </dl><!-- /.price-card__body -->
-            </div><!-- /.price-card -->
-            <div class="price-card">
-              <div class="price-card__label">
-                <p class="price-card__label-text">
-                  オススメ!
-                </p><!-- /.price-card__label-text -->
-              </div><!-- /.price-card__label -->
-              <div class="price-card__header">
-                <h3 class="price-card__title">週2コース</h3><!-- /.price-card__title -->
-                <p class="price-card__price"><span>￥</span>40,000</p><!-- /.price-card__price -->
-                <p class="price-card__detail">(入会金￥10000)</p><!-- /.price-card__detail -->
-              </div><!-- /.price-card__header -->
-              <dl class="price-card__body">
-                <dt class="price-card__body-head">
-                  レンタル
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  タオル、ウェア、プロテイン無料
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  レストラン
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  使用可
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  食事指導
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  有り
-                </dd><!-- /.price-card-body-text -->
-              </dl><!-- /.price-card__body -->
-            </div><!-- /.price-card -->
-            <div class="price-card">
-              <div class="price-card__header">
-                <h3 class="price-card__title">無制限</h3><!-- /.price-card__title -->
-                <p class="price-card__price"><span>￥</span>70,000</p><!-- /.price-card__price -->
-                <p class="price-card__detail">(入会金￥10000)</p><!-- /.price-card__detail -->
-              </div><!-- /.price-card__header -->
-              <dl class="price-card__body">
-                <dt class="price-card__body-head">
-                  レンタル
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  タオル、ウェア、プロテイン無料
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  レストラン
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  使用可
-                </dd><!-- /.price-card-body-text -->
-                <dt class="price-card__body-head">
-                  食事指導
-                </dt><!-- /.price-card__body-head -->
-                <dd class="price-card-body-text">
-                  有り￥
-                </dd><!-- /.price-card-body-text -->
-              </dl><!-- /.price-card__body -->
-            </div><!-- /.price-card -->
-          </div><!-- /.price-cards grid-->
-        </div><!-- /.section__inner -->
+          <div class="section__inner">
+            <h2 class="heading-lv2 heading-lv2--price heading-lv2--color--reverse">
+              Price
+              <span class="heading-lv2__subtitle heading-lv2__subtitle--color--reverse">料金</span><!-- /.heading-lv2__subtitle -->
+            </h2><!-- /.heading-lv2 -->
+            <div class="price-cards grid grid--price">
+              <div class="price-card">
+                <div class="price-card__header">
+                  <h3 class="price-card__title">週１コース</h3><!-- /.price-card__title -->
+                  <p class="price-card__price"><span>¥</span>20,000</p><!-- /.price-card__price -->
+                  <p class="price-card__detail">（入会金 ¥10000）</p><!-- /.price-card__detail -->
+                </div><!-- /.price-card__header -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レンタル
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    タオル、ウェア、プロテイン無料
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レストラン
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    使用不可
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    食事指導
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    なし
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+              </div><!-- /.price-card -->
+              <div class="price-card">
+                <div class="price-card__label">
+                  <p class="price-card__label-text">オススメ！</p><!-- /.price-card__label-text -->
+                </div><!-- /.price-card__label -->
+                <div class="price-card__header">
+                  <h3 class="price-card__title">週２コース</h3><!-- /.price-card__title -->
+                  <p class="price-card__price"><span>¥</span>40,000</p><!-- /.price-card__price -->
+                  <p class="price-card__detail">（入会金 ¥10,000）</p><!-- /.price-card__detail -->
+                </div><!-- /.price-card__header -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レンタル
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    タオル、ウェア、プロテイン無料
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レストラン
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    使用不可
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    食事指導
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    無し
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+              </div><!-- /.price-card -->
+              <div class="price-card">
+                <div class="price-card__header">
+                  <h3 class="price-card__title">無制限</h3><!-- /.price-card__title -->
+                  <p class="price-card__price"><span>¥</span>70,000</p><!-- /.price-card__price -->
+                  <p class="price-card__detail">（入会金¥10,000）</p><!-- /.price-card__detail -->
+                </div><!-- /.price-card__header -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レンタル
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    タオル、ウェア、プロテイン無料
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    レストラン
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    使用可
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+                <dl class="price-card__item">
+                  <dt class="price-card__item-head">
+                    食事指導
+                  </dt><!-- /.price-card__body-head -->
+                  <dd class="price-card__item-text">
+                    有り
+                  </dd><!-- /.price-card-body-text -->
+                </dl><!-- /.price-card__item -->
+              </div><!-- /.price-card -->
+              <div class="price-card__scroll">
+                <span class="price-card__scroll-icon material-icons-round">east</span>スクロール
+                <!-- /.price-card__scroll-icon -->
+              </div><!-- /.price-card__scroll -->
+            </div><!-- /.price-cards grid-->
+          </div><!-- /.section__inner -->
         </div>
+        <svg class="section-border-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 25">
+          <path d="M375,240.667l-20.833,1.38c-20.833,1.484-62.5,4.089-104.167,1.406-41.667-2.786-83.333-11.12-125-15.286S41.667,224,20.833,224H0v25H375Z" transform="translate(375 249) rotate(180)" fill="#eb51c2" />
+        </svg>
       </section><!--          /.price section       -->
       <section class="faq">
-        <div class="faq__inner">
-          <h2 class="heading-lv2 heading-lv2--color--reverse">
+        <div class="section__inner section__inner--faq">
+          <h2 class="heading-lv2 heading-lv2--faq">
             FAQ
-            <span class="heading-lv2__subtitle heading-lv2__subtitle--color--reverse">よくあるご質問</span><!-- /.heading-lv2__subtitle -->
+            <span class="heading-lv2__subtitle">よくあるご質問</span><!-- /.heading-lv2__subtitle -->
           </h2><!-- /.heading-lv2 -->
           <dl class="accordion">
-            <dt class="accordion__title">
-              <button type="button" class="accordion__btn">
-                <span class="accordion__label">Q</span><!-- /.accordion__label -->
-                見学や体験は可能ですか？
-              </button><!-- /.accordion__btn -->
-            </dt><!-- /.accordion__title -->
-            <dd class="accordion__body">
-              <p class="accordion__text">
-                <span class="accordion__label">A</span><!-- /.accordion__label -->
-                無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。
-              </p><!-- /.accordion__text -->
-            </dd><!-- /.accordion__body -->
-            <dt class="accordion__title">
-              <button type="button" class="accordion__btn">
-                <span class="accordion__label">Q</span><!-- /.accordion__label -->
-                用意するものは何がありますか？
-              </button><!-- /.accordion__btn -->
-            </dt><!-- /.accordion__title -->
-            <dd class="accordion__body">
-              <p class="accordion__text">
-                <span class="accordion__label">A</span><!-- /.accordion__label -->
-                シューズをご持参ください。ウェアとタオルは無料でレンタルが可能です。
-              </p><!-- /.accordion__text -->
-            </dd><!-- /.accordion__body -->
-            <dt class="accordion__title">
-              <button type="button" class="accordion__btn">
-                <span class="accordion__label">Q</span><!-- /.accordion__label -->
-                シャワールームはありますか？
-              </button><!-- /.accordion__btn -->
-            </dt><!-- /.accordion__title -->
-            <dd class="accordion__body">
-              <p class="accordion__text">
-                <span class="accordion__label">A</span><!-- /.accordion__label -->
-                5つのシャワールームがございます。ボディソープ・シャンプー・リンスなどのアメニティやドライヤーもご用意しております。
-              </p><!-- /.accordion__text -->
-            </dd><!-- /.accordion__body -->
+            <div class="accordion__item">
+              <dt class="accordion__title">
+                <button type="button" class="accordion__btn">
+                  <span class="accordion__label">Q</span><!-- /.accordion__label -->
+                  見学や体験は可能ですか？
+                </button><!-- /.accordion__btn -->
+              </dt><!-- /.accordion__title -->
+              <dd class="accordion__body">
+                <p class="accordion__text">
+                  <span class="accordion__label">A</span><!-- /.accordion__label -->
+                  無料カウンセリングの際に見学が可能です。フォームに見学・体験希望の欄がございますので内容をご確認しチェックを入れてください。
+                </p><!-- /.accordion__text -->
+              </dd><!-- /.accordion__body -->
+            </div><!-- /.accordion__item -->
+            <div class="accordion__item">
+              <dt class="accordion__title">
+                <button type="button" class="accordion__btn">
+                  <span class="accordion__label">Q</span><!-- /.accordion__label -->
+                  用意するものは何がありますか？
+                </button><!-- /.accordion__btn -->
+              </dt><!-- /.accordion__title -->
+              <dd class="accordion__body">
+                <p class="accordion__text">
+                  <span class="accordion__label">A</span><!-- /.accordion__label -->
+                  シューズをご持参ください。ウェアとタオルは無料でレンタルが可能です。
+                </p><!-- /.accordion__text -->
+              </dd><!-- /.accordion__body -->
+            </div><!-- /.accordion__item -->
+            <div class="accordion__item">
+              <dt class="accordion__title">
+                <button type="button" class="accordion__btn">
+                  <span class="accordion__label">Q</span><!-- /.accordion__label -->
+                  シャワールームはありますか？
+                </button><!-- /.accordion__btn -->
+              </dt><!-- /.accordion__title -->
+              <dd class="accordion__body">
+                <p class="accordion__text">
+                  <span class="accordion__label">A</span><!-- /.accordion__label -->
+                  5つのシャワールームがございます。ボディソープ・シャンプー・リンスなどのアメニティやドライヤーもご用意しております。
+                </p><!-- /.accordion__text -->
+              </dd><!-- /.accordion__body -->
+            </div><!-- /.accordion__item -->
           </dl><!-- /.accordion -->
-        </div><!-- /.faq__inner -->
+        </div><!-- /.section__inner -->
       </section><!-- /.faq -->
       <section class="cta">
         <div class="cta__inner">
           <div class="cta__img-inner">
             <picture class="cta__img">
-              <source media="(min-width: 992px)" srcset="images/pc_cta@2x.png">
+              <source media="(min-width: 762px)" srcset="images/pc_cta@2x.png">
               <img src="images/sp_cta@2x.png" alt="ジムのトレーナーたちの写真">
             </picture><!-- /.cta__img -->
           </div><!-- /.cta__img-inner -->
