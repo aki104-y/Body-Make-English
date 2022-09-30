@@ -317,9 +317,9 @@ progress {
   cursor: default;
 }
 
-/*----------------------------------------
+/* ----------------------------------------
 	共通部分
-----------------------------------------*/
+---------------------------------------- */
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -350,12 +350,12 @@ img {
 ------------------------------------------------------ */
 .header__inner {
   z-index: 20;
-  width: 100%;
-  display: flex;
-  height: 60px;
   position: fixed;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  height: 60px;
   padding-right: 20px;
   padding-left: 20px;
   transition: 0.3s;
@@ -393,17 +393,6 @@ img {
 
 /* main
 ------------------------------------------------------ */
-/* 波形のSVG画像の隙間防止
------------------------------------------------------- */
-.section-border-top {
-  transform: translateY(1px);
-  vertical-align: bottom;
-}
-
-.section-border-bottom {
-  transform: translateY(-1px);
-}
-
 /* footer
 ------------------------------------------------------ */
 .footer {
@@ -421,8 +410,8 @@ img {
 }
 
 .footer__logo {
-  margin: 0 auto;
   width: 87px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
   .footer__logo {
@@ -503,12 +492,12 @@ img {
 
 .mv__img {
   position: absolute;
-  opacity: 0;
   top: 0;
   right: 0;
   width: 70%;
   height: 410px;
   border-radius: 0 0 0 50px;
+  opacity: 0;
   animation: 1s fadeInMvImg 0.2s forwards;
   object-fit: cover;
   z-index: -1;
@@ -581,8 +570,8 @@ img {
 @media screen and (min-width: 1025px) {
   .btn--header {
     width: 250px;
-    font-size: 0.9375rem;
     padding: 12px 15px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -599,8 +588,8 @@ img {
 ------------------------------------------------------ */
 .fadein {
   opacity: 0;
-  transform: translateY(40px);
   transition: all 0.8s;
+  transform: translateY(40px);
 }
 
 .fadein-scroll {
@@ -662,8 +651,8 @@ img {
 /* service
 ------------------------------------------------------ */
 .service__inner {
-  margin: 0 auto;
   padding-bottom: 43px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
   .service__inner {
@@ -714,7 +703,7 @@ img {
 
 .media__body {
   position: relative;
-  padding: 40px 30px 30px 30px;
+  padding: 40px 30px 30px;
   margin: -10px 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -723,16 +712,16 @@ img {
 @media screen and (min-width: 1025px) {
   .media__body {
     position: absolute;
-    padding: 60px;
-    width: 555px;
+    right: 0;
     bottom: 90px;
-    right: 0px;
+    width: 555px;
+    padding: 60px;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .media__body--reverse {
-    left: 0px;
+    left: 0;
   }
 }
 
@@ -764,8 +753,8 @@ img {
 }
 
 .media__text {
-  line-height: 1.7;
   font-size: 0.875rem;
+  line-height: 1.7;
 }
 @media screen and (min-width: 1025px) {
   .media__text {
@@ -781,8 +770,8 @@ img {
 }
 
 .section__inner {
-  margin: 0 auto;
   padding: 40px 30px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1025px) {
   .section__inner {
@@ -792,15 +781,15 @@ img {
 
 @media screen and (min-width: 1025px) {
   .section__inner--faq {
-    padding: 60px 30px 70px 30px;
+    padding: 60px 30px 70px;
   }
 }
 
 /* 波形のSVG画像の隙間防止
 ------------------------------------------------------ */
 .section-border-top {
-  transform: translateY(1px);
   vertical-align: bottom;
+  transform: translateY(1px);
 }
 
 .section-border-bottom {
@@ -810,10 +799,10 @@ img {
 /* heading
 ------------------------------------------------------ */
 .heading-lv2 {
-  font-size: 2.5rem;
-  line-height: 1;
   margin-bottom: 30px;
+  font-size: 2.5rem;
   font-weight: 400;
+  line-height: 1;
 }
 @media screen and (min-width: 1025px) {
   .heading-lv2 {
@@ -835,10 +824,10 @@ img {
 
 .heading-lv2__subtitle {
   display: block;
-  color: #eb51c2;
   margin-top: 10px;
   font-size: 0.875rem;
   font-weight: bold;
+  color: #eb51c2;
 }
 @media screen and (min-width: 1025px) {
   .heading-lv2__subtitle {
@@ -868,17 +857,17 @@ img {
 
 .tab-navigation__link {
   display: block;
-  font-size: 1rem;
-  text-align: center;
   padding-bottom: 10px;
+  font-size: 1rem;
   color: #fff;
+  text-align: center;
   text-decoration: none;
   transition: 0.25s;
 }
 @media screen and (min-width: 1025px) {
   .tab-navigation__link {
-    font-size: 1.125rem;
     padding-bottom: 20px;
+    font-size: 1.125rem;
   }
 }
 
@@ -892,8 +881,8 @@ img {
 .tab-card {
   display: none;
   overflow: hidden;
-  border-radius: 10px;
   background-color: #fff;
+  border-radius: 10px;
   animation-name: fadeUp;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
@@ -945,7 +934,7 @@ img {
   }
 }
 
-/*PC3カラム*/
+/* PC3カラム */
 @media screen and (min-width: 600px) {
   .grid--pc3col {
     grid-template-columns: repeat(3, 1fr);
@@ -955,33 +944,33 @@ img {
 /* studio
 ------------------------------------------------------ */
 .studio__inner {
+  padding: 40px 30px 0;
   margin: 0 auto;
-  padding: 40px 30px 0 30px;
 }
 @media screen and (min-width: 1025px) {
   .studio__inner {
-    padding: 56px 30px 19px 30px;
     max-width: 1170px;
+    padding: 56px 30px 19px;
   }
 }
 
 /* 料金
 ------------------------------------------------------ */
 .price-cards {
-  overflow-x: auto;
-  padding-top: 25px;
   position: relative;
+  padding-top: 25px;
+  overflow-x: auto;
   white-space: nowrap;
 }
 
 .price-card {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 320px;
-  text-align: center;
   padding: 32px 20px 0;
-  border-radius: 8px;
+  text-align: center;
   background-color: #fff;
+  border-radius: 8px;
 }
 @media screen and (min-width: 1025px) {
   .price-card {
@@ -995,10 +984,10 @@ img {
 }
 
 .price-card__title {
+  margin-bottom: 13px;
   font-size: 1.625rem;
   font-weight: bold;
   color: #eb51c2;
-  margin-bottom: 13px;
 }
 
 .price-card__price {
@@ -1027,27 +1016,27 @@ img {
   top: -24px;
   left: 50%;
   width: 80%;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   color: #eb51c2;
-  padding: 10px;
-  transform: translateX(-50%);
+  background-color: #fff;
   border: 2px solid #eb51c2;
   border-radius: 50px;
-  background-color: #fff;
+  transform: translateX(-50%);
 }
 
 .price-card__scroll {
   position: absolute;
   top: 50%;
   right: 5%;
+  padding: 10px;
   font-size: 12px;
   color: #fff;
-  padding: 10px;
-  transform: translateY(-50%);
-  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  transform: translateY(-50%);
 }
 @media screen and (min-width: 1025px) {
   .price-card__scroll {
@@ -1069,19 +1058,19 @@ img {
 
 .accordion__title {
   position: relative;
-  padding: 18px 0px 20px 0;
+  padding: 18px 0 20px;
   font-weight: normal;
   cursor: pointer;
 }
 
 .accordion__title::after {
   position: absolute;
-  content: "expand_more";
   top: 50%;
   right: 0;
   font-family: "Material Icons Round";
   font-size: 1.5rem;
   color: #eb51c2;
+  content: "expand_more";
   transform: translateY(-50%);
 }
 
@@ -1089,7 +1078,8 @@ img {
   content: "expand_less";
 }
 
-.accordion__btn, .accordion__text {
+.accordion__btn,
+.accordion__text {
   display: flex;
   align-items: center;
   font-size: 0.9375rem;
@@ -1121,19 +1111,19 @@ img {
 }
 @media screen and (min-width: 1025px) {
   .cta__body {
-    padding: 40px 0 50px 0;
+    padding: 40px 0 50px;
   }
 }
 
 .cta__title {
-  font-size: 1.625rem;
   margin-bottom: 10px;
+  font-size: 1.625rem;
   font-weight: 400;
 }
 @media screen and (min-width: 1025px) {
   .cta__title {
-    font-size: 4rem;
     margin-bottom: 15px;
+    font-size: 4rem;
   }
 }
 
@@ -1141,6 +1131,7 @@ img {
 ------------------------------------------------------ */
 .page-top {
   z-index: 10;
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -1154,11 +1145,11 @@ img {
   height: 40px;
   color: #fff;
   text-align: center;
-  transition: opacity 0.3s;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
 }
 @media screen and (min-width: 1025px) {
   .page-top__link {
@@ -1169,9 +1160,9 @@ img {
 
 .page-top__link::after {
   font-family: "Material Icons Round";
-  content: "\e316";
-  color: #eb51c2;
   font-size: 1.5rem;
+  color: #eb51c2;
+  content: "\e316";
 }
 @media screen and (min-width: 1025px) {
   .page-top__link::after {
@@ -1182,13 +1173,13 @@ img {
 /* 背景色が伸びて出現
 ------------------------------------------------------ */
 .bgextend {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
   animation-name: bgextendAnimeBase;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  position: relative;
-  overflow: hidden;
   /*　はみ出た色要素を隠す　*/
-  opacity: 0;
 }
 
 @keyframes bgextendAnimeBase {
@@ -1199,13 +1190,13 @@ img {
     opacity: 1;
   }
 }
-/*中の要素*/
+/* 中の要素 */
 .bgappear {
+  opacity: 0;
   animation-name: bgextendAnimeSecond;
   animation-duration: 1s;
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 @keyframes bgextendAnimeSecond {
@@ -1216,34 +1207,34 @@ img {
     opacity: 1;
   }
 }
-/*左から右*/
+/* 左から右 */
 .bgLRextend::before {
-  animation-name: bgLRextendAnime;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  content: "";
   background-color: #eb51c2;
-  /*伸びる背景色の設定*/
+  animation-name: bgLRextendAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  /* 伸びる背景色の設定 */
 }
 
 @keyframes bgLRextendAnime {
   0% {
-    transform-origin: left;
     transform: scaleX(0);
+    transform-origin: left;
   }
   50% {
-    transform-origin: left;
     transform: scaleX(1);
+    transform-origin: left;
   }
   50.001% {
     transform-origin: right;
   }
   100% {
-    transform-origin: right;
     transform: scaleX(0);
+    transform-origin: right;
   }
 }
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
@@ -1255,16 +1246,16 @@ img {
 /* swiper
 ------------------------------------------------------ */
 .swiper-container {
+  position: relative;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  position: relative;
 }
 
 .swiper {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
   padding-bottom: 39px;
 }
 
@@ -1277,15 +1268,15 @@ img {
 .swiper-button-prev {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   background-color: #fff;
+  border-radius: 50%;
 }
 @media screen and (min-width: 1025px) {
   .swiper-button-next,
 .swiper-button-prev {
+    top: 335px;
     width: 60px;
     height: 60px;
-    top: 335px;
   }
 }
 
@@ -1307,24 +1298,24 @@ img {
   }
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-family: "Material Icons Round";
   font-size: 1.5rem;
   color: #eb51c2;
 }
 @media screen and (min-width: 1025px) {
-  .swiper-button-prev:after,
-.swiper-button-next:after {
+  .swiper-button-prev::after,
+.swiper-button-next::after {
     font-size: 2rem;
   }
 }
 
-.swiper-button-prev:after {
+.swiper-button-prev::after {
   content: "navigate_before";
 }
 
-.swiper-button-next:after {
+.swiper-button-next::after {
   content: "navigate_next";
 }
 
